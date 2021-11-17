@@ -1,4 +1,4 @@
-
-#run='python Lunar_Orbit_Simulation.py'
+run='python LOS/Lunar_Orbit_Simulation.py'
+#run='python Old/Lunar_Orbit_Simulation.py'
 #run='python Propulsion/MainEngine.py'
-run='python Propulsion/ControlThruster.py'
+#run='python Propulsion/ControlThruster.py'

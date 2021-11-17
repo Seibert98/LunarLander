@@ -1,9 +1,11 @@
 
-# Earth Atmosphere Model
-# Find temperature, pressure, density of air for any altitude
-# Source: Nasa Earth Atmosphere Model
-# Enter height in meters
-# Temperature will be returned in degrees C, Pressure in kPa, density in kg/m3
+'''
+Source: Nasa Earth Atmosphere Model
+Enter height in meters
+Temperature will be returned in degrees C, Pressure in kPa, density in kg/m3
+Valid between 0 and 50,000 m
+'''
+
 import math
 
 def atm_model(h):

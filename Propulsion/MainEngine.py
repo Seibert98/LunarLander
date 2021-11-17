@@ -18,7 +18,7 @@ P1 = 1E6                # Chamber pressure (Pa)
 Pe_val = 10E3           # Nozzle exit pressure (Pe) or calculate pressure at altitude (m)
 Pe_method = 0           # Set to 0 if specifying exit pressure, set to 1 if specifying altitude
 
-Pa_val = 0.1E3          # Ambient pressure (Pa) or altitude (m)
+Pa_val = 1E3            # Ambient pressure (Pa) or altitude (m)
 Pa_method = 0           # Set to 0 if specifying exit pressure, set to 1 if specifying altitude
 
 OF = 3.0                # Mixture ratio
@@ -47,7 +47,7 @@ Length_fraction = 0.8   # Length fraction of bell nozzle (Le/L15)
 divx = 2                # Number of divisions per millimeter
 
 # Properties from CEA or RPA
-k = 1.1679              # Specific heat ratio (Cp/Cv aka gamma)
+k = 1.1276              # Specific heat ratio (Cp/Cv aka gamma)
 T1 = 3246.7409          # Combustion temp (K)
 MW = 20.0213            # Molecular weight
 

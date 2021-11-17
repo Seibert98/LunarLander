@@ -86,13 +86,14 @@ def EnginePerformance(k, T1, MW, Thrust, P1, Pe, Pa, OF, c_star_e, Cf_e):
 
     # Mass flow rate ( kg / s)
     # RPE Eq. 2-14, ModEng Eq. 1-5
-    mdot = (Thrust - (Pe-Pa)*Ae*10**-6)/Ve
+    mdot = Thrust / Ve
     mdotO = mdot/(1+(1/OF))
     mdotF = mdotO/OF
 
     # Specific Impulse ( s )
     # ModEng. Eq. 1-31
     Isp = Thrust / (mdot*g)
+    #Isp = Ve / g
     # Overall efficiency
     Engine_e = c_star_e * Cf_e
 

@@ -23,15 +23,19 @@ plt.style.use( 'dark_background' )
 moon_radius = 1737.4 # km
 moon_mu     = 4.9048695E3 # km^3 / s^2
 
+
+def norm( v ):
+	return np.linalg.norm( v )
+
 def two_body_ode( t, state ):
-	'''
-	Newtons Universal Law of Gravitation
-	'''
+	#Newtons Universal Law of Gravitation
+
 	r = state[ :3 ]
 	a = -moon_mu * r / np.linalg.norm( r ) ** 3
 
 	return np.array( [ state[ 3 ], state[ 4 ], state[ 5 ],
 			 a[ 0 ], a[ 1 ], a[ 2 ] ] )
+
 
 def rk4_step( f, t, y, h ):
 	'''
@@ -154,14 +158,15 @@ def plot_orbits( rs, args ):
 
 # INITIAL VALUES
 if __name__ == '__main__':
+  
   # Initial position, km
-    rx          = 10000
-    ry          = 10000
-    rz          = -10000
+    rx          = 4000
+    ry          = 4000
+    rz          = 0
   # Initial velocity, km / s
-    Vx          = 0.25
-    Vy          = 0.25
-    Vz          = 0.1
+    Vx          = 0.5
+    Vy          = -0.5
+    Vz          = 0
 
 # for circular orbit 
 #r0_norm     = moon_radius + 450.0             # km

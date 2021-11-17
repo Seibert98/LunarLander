@@ -7,6 +7,8 @@ Thrust, chamber pressure, propellant mixture ratio, nozzle exit pressure, ambien
 Parameters obtained with Nasa CEA or Rocket Propulsion Analysis:
 Combustion temperature, specific heat ratio of combustion products, molecular weight of combustion products
 
+NASA CEA: https://cearun.grc.nasa.gov/index.html
+
 Install before running:
 numpy
 matplotlib

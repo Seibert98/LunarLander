@@ -13,16 +13,16 @@ import matplotlib.pyplot as plt
 # INITIAL PARAMETERS
 
 Thrust = 400            # Thrust (N)
-P1 = 1.5E6              # Chamber pressure (Pa)
+P1 = 2.0E6              # Chamber pressure (Pa)
 
 Pe_val = 1E3            # Nozzle exit pressure (Pa) or calculate pressure at altitude (m)
 Pe_method = 0           # Set to 0 if specifying exit pressure, set to 1 if specifying altitude
 
-Pa_val = 1E3            # Ambient pressure (Pa) or altitude (m)
+Pa_val = 1E2            # Ambient pressure (Pa) or altitude (m)
 Pa_method = 0           # Set to 0 if specifying exit pressure, set to 1 if specifying altitude
 
 OF = 1                  # Mixture ratio
-c_star_e = 0.96         # Reaction efficiency
+c_star_e = 0.97         # Reaction efficiency
 Cf_e = 0.97             # Nozzle efficiency
 
 if Pe_method == 0:
@@ -47,9 +47,9 @@ Length_fraction = 0.8   # Length fraction of bell nozzle (Le/L15)
 divx = 4                # Number of divisions per millimeter
 
 # Properties from CEA or RPA
-k = 1.3600              # Specific heat ratio (Cp/Cv aka gamma)
-T1 = 877.2057           # Combustion temp (K)
-MW = 10.7546            # Molecular weight
+k = 1.3564              # Specific heat ratio (Cp/Cv aka gamma)
+T1 = 880.6713           # Combustion temp (K)
+MW = 10.7757            # Molecular weight
 
 
 # Run Engine Performance function and store results
