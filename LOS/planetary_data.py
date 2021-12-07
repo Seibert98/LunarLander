@@ -49,7 +49,7 @@ moon = {
 		'mu'              : 7.342e22 * G,
 		'radius'          : 1737.4,
 		#'J2'              : 1.081874e-3,
-		#'sma'             : 149.596e6, # km
+		'sma'             : 384748, # km
 		#'SOI'             : 926006.6608, # km
 		#'deorbit_altitude': 100.0, # km
 		'cmap'            : 'Greys',

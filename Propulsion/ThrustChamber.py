@@ -157,10 +157,13 @@ def EngineGeometry(divx, Length_fraction, At, Ae, epsilon, Ec, L_star, alpha, Ve
     
     # Radius of converging chamber curve (Rcc/Dc = 1)
     Rcc = Dc
+    print('Rcc: ', Rcc)
     # Radius of converging throat curve
     Rct = 1.5 * Rt
+    print('Rct: ', Rct)
     # Radius of diverging throat curve
     Rdt = 0.382 * Rt
+    print('Rdt: ', Rdt)
 
     # convert alpha to radians
     alpha = alpha * math.pi/180
@@ -306,7 +309,7 @@ def EngineGeometry(divx, Length_fraction, At, Ae, epsilon, Ec, L_star, alpha, Ve
     
     result = {'Exit temp': Te, 'Exit sonic velocity': ae, 'Exit mach number': Me, 'thetaN': thetaNdeg,
               'Exit angle': thetaE, 'Chamber radius': Rc, 'Throat radius': Rt, 'Exit radius': Re,
-              'L_cyl': L_cyl, 'L_chamb': L_chamb, 'Total length': L_total, 'Chamber geometry': CGeo, 'Ax': Ax}
+              'L_cyl': L_cyl, 'L_chamb': L_chamb, 'Total length': L_total, 'Chamber geometry': CGeo, 'Ax': Ax, 'Converging throat radius': Rct, 'Diverging throat radius': Rdt,}
     
     return result
 

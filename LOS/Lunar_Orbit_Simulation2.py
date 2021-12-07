@@ -24,19 +24,19 @@ print('SOI: ', SOI)
 if __name__ == '__main__':
 	
 # Initial position, km
-    rx          = 56067
-    ry          = 35253
+    rx          = 10000
+    ry          = 10000
     rz          = 0
 # Initial velocity, km / s
-    Vx          = .831006
-    Vy          = -.5
+    Vx          = .25
+    Vy          = -.25
     Vz          = 0.0
     
     #r0_norm     = pd.moon[ 'radius' ] + 450.0          # km | for circular orbit
 	#v0_norm     = ( pd.moon[ 'mu' ] / r0_norm ) ** 0.5 # km / s
 	
     statei      = [ rx, ry, rz, Vx, Vy, Vz ]
-    tspan       = 4000 * 60.0                          # timespan, seconds
+    tspan       = 10000 * 60.0                          # timespan, seconds
     dt          = 100.0                             
     #time interval, seconds
     steps       = int( tspan / dt )
@@ -49,3 +49,4 @@ if __name__ == '__main__':
     		oc.two_body_ode, ets[ step ], states[ step ], dt )
 
     pt.plot_orbits( [ states ], { 'cb_radius': 1737.4, 'cb_cmap': 'Greys_r', 'show': True } )
+

@@ -164,8 +164,8 @@ if __name__ == '__main__':
     ry          = 4000
     rz          = 0
   # Initial velocity, km / s
-    Vx          = 0.5
-    Vy          = -0.5
+    Vx          = .65
+    Vy          = -.3
     Vz          = 0
 
 # for circular orbit 
